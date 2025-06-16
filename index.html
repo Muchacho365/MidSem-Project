@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MACL | Muchacho Airport Company Limited</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header class="container-header">
+            <div class="container-header-content">
+                <a href="index.html" class="container-logo">MACL</a>
+                <nav class="container-nav">
+                    <ul class="container-main-nav">
+                        <li class="dropdown">
+                            <a href="pages/flights.html"><span>Flights</span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="pages/flights.html#arrivals">Arrivals</a>
+                                </li>
+                                <li>
+                                    <a href="pages/flights.html#departures">Departures</a>
+                                </li>
+                                <li>
+                                    <a href="pages/flights.html#airlines">Airlines</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="pages/explore.html"><span>Explore</span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="pages/explore.html#hotels">Hotels</a>
+                                </li>
+                                <li>
+                                    <a href="pages/explore.html#restaurants">Restaurants</a>
+                                </li>
+                                <li><a href="pages/explore.html#shops">Shops</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="pages/experience.html"><span>Experience</span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="pages/experience.html#lounges">Lounges</a>
+                                </li>
+                                <li>
+                                    <a href="pages/experience.html#restaurants">Restaurants</a>
+                                </li>
+                                <li>
+                                    <a href="pages/experience.html#shops">Shops</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="pages/services.html"><span>Services</span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="pages/services.html#lostfound">Lost &amp; Found</a>
+                                </li>
+                                <li>
+                                    <a href="pages/services.html#wifi">Free Wi-Fi</a>
+                                </li>
+                                <li>
+                                    <a href="pages/services.html#disability">Accessibility</a>
+                                </li>
+                                <li>
+                                    <a href="pages/services.html#allservices">All Services</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="pages/about.html"><span>About Us</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pages/about.html#news">News</a></li>
+                                <li>
+                                    <a href="pages/about.html#contact">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="pages/about.html#careers">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="pages/about.html#privacy">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="container-hero">
+                <div class="container-hero-bg">
+                    <video
+                        class="container-hero-video"
+                        src="videos/first.mp4"
+                        loop
+                        autoplay
+                        muted
+                        alt="Passengers going into a olane"
+                        ></video>
+                </div>
+                <div class="container-hero-content hero-horizontal">
+                    <div class="hero-text-block">
+                        <h1>Welcome to Muchacho Airport Company Limited</h1>
+                        <p>Book your next journey with us. Experience world-class service and comfort.</p>
+                    </div>
+                    <form class="container-booking-form" id="flight-search-form">
+                        <input type="text" name="from" placeholder="From" required />
+                        <input type="text" name="to" placeholder="To" required />
+                        <input type="date" name="date" required />
+                        <button type="submit">Search Flights</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="featured-destinations">
+                <div class="featured-header">
+                    <h2>Featured Destinations</h2>
+                    <p>
+                        Exciting journeys start here. Discover our most popular destinations, handpicked for you.
+                        Explore the best of Ghana and beyond with MACL.
+                    </p>
+                </div>
+                <div class="featured-marquee">
+                    <div class="marquee-track">
+                        <div class="featured-grid">
+                            <div class="destination-card" data-number="1">
+                                <div class="destination-image-placeholder">
+                                    <img src="images/accra-independence.jpg" alt="Independence Square" />
+                                </div>
+                                <div class="destination-info">
+                                    <h3>Accra</h3>
+                                    <p>
+                                        Ghana's vibrant capital city, rich in culture, business, and nightlife. Explore
+                                        Makola Market, Independence Arch, Labadi Beach, and the National Museum.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="destination-card" data-number="2">
+                                <div class="destination-image-placeholder">
+                                    <img src="images/kakum.jpg" alt="Kakum National Park" />
+                                </div>
+                                <div class="destination-info">
+                                    <h3>Kakum National Park</h3>
+                                    <p>
+                                        Experience the famous canopy walkway, lush rainforest, and unique wildlife in
+                                        Ghana's premier eco-tourism destination.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="destination-card" data-number="3">
+                                <div class="destination-image-placeholder">
+                                    <img src="images/Cape-Coast-Castle.webp" alt="Cape Coast Castle" />
+                                </div>
+                                <div class="destination-info">
+                                    <h3>Cape Coast Castle</h3>
+                                    <p>
+                                        Step into history at this UNESCO World Heritage Site, a powerful symbol of
+                                        Ghana's past and resilience.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="destination-card" data-number="4">
+                                <div class="destination-image-placeholder">
+                                    <img src="images/kumasi.jpg" alt="Kumasi" />
+                                </div>
+                                <div class="destination-info">
+                                    <h3>Kumasi</h3>
+                                    <p>
+                                        The Garden City of West Africa, home to the Ashanti Kingdom, bustling markets,
+                                        and beautiful parks.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="destination-card" data-number="5">
+                                <div class="destination-image-placeholder">
+                                    <img src="images/mole.png" alt="Elephant in Mole Park" />
+                                </div>
+                                <div class="destination-info">
+                                    <h3>Tamale</h3>
+                                    <p>
+                                        Gateway to Northern Ghana, known for its warm hospitality, unique cuisine, and
+                                        cultural festivals.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Duplicate for seamless marquee -->
+                        <div class="featured-grid">
+                            <div class="destination-card" data-number="1">
+                                <div class="destination-image-placeholder">
+                                    <img src="images/accra-independence.jpg" alt="Independence Square" />
+                                </div>
+                                <div class="destination-info">
+                                    <h3>Accra</h3>
+                                    <p>
+                                        Ghana's vibrant capital city, rich in culture, business, and nightlife. Explore
+                                        Makola Market, Independence Arch, Labadi Beach, and the National Museum.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="destination-card" data-number="2">
+                                <div class="destination-image-placeholder">
+                                    <img src="images/kakum.jpg" alt="Kakum National Park" />
+                                </div>
+                                <div class="destination-info">
+                                    <h3>Kakum National Park</h3>
+                                    <p>
+                                        Experience the famous canopy walkway, lush rainforest, and unique wildlife in
+                                        Ghana's premier eco-tourism destination.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="destination-card" data-number="3">
+                                <div class="destination-image-placeholder">
+                                    <img src="images/Cape-Coast-Castle.webp" alt="Cape Coast Castle" />
+                                </div>
+                                <div class="destination-info">
+                                    <h3>Cape Coast Castle</h3>
+                                    <p>
+                                        Step into history at this UNESCO World Heritage Site, a powerful symbol of
+                                        Ghana's past and resilience.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="destination-card" data-number="4">
+                                <div class="destination-image-placeholder">
+                                    <img src="images/kumasi.jpg" alt="Kumasi" />
+                                </div>
+                                <div class="destination-info">
+                                    <h3>Kumasi</h3>
+                                    <p>
+                                        The Garden City of West Africa, home to the Ashanti Kingdom, bustling markets,
+                                        and beautiful parks.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="destination-card" data-number="5">
+                                <div class="destination-image-placeholder">
+                                    <img src="images/mole.png" alt="Elephant in Mole Park" />
+                                </div>
+                                <div class="destination-info">
+                                    <h3>Tamale</h3>
+                                    <p>
+                                        Gateway to Northern Ghana, known for its warm hospitality, unique cuisine, and
+                                        cultural festivals.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="travel-tips">
+                <div class="tips-header">
+                    <h2>Travel Tips & Essentials</h2>
+                    <p>
+                        Prepare for a smooth journey with our expert advice on security, baggage, documents, and airport
+                        navigation.
+                    </p>
+                </div>
+                <div class="tips-grid">
+                    <div class="tip-card tip-security">
+                        <img src="images/guidelines.webp" alt="Security Guidelines" />
+                        <h3>Security Guidelines</h3>
+                        <p>
+                            Arrive early, keep your documents handy, and follow all security instructions for a
+                            stress-free experience.
+                        </p>
+                    </div>
+                    <div class="tip-card tip-baggage">
+                        <img src="images/baggage.jpeg" alt="Baggage Info" />
+                        <h3>Baggage Information</h3>
+                        <p>
+                            Check your airline's baggage policy, label your bags, and avoid carrying prohibited items.
+                        </p>
+                    </div>
+                    <div class="tip-card tip-documents">
+                        <img src="images/document.jpg" alt="Travel Documents" />
+                        <h3>Travel Documents</h3>
+                        <p>Ensure your passport, visa, and tickets are valid and accessible at all times.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="airport-services">
+                <h2>Airport Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="images/service1.jpg" alt="Lounges" />
+                        <h3>Lounges</h3>
+                        <p>Relax in our premium lounges with complimentary snacks, Wi-Fi, and comfortable seating.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/service2.jpg" alt="Shopping" />
+                        <h3>Shopping</h3>
+                        <p>Shop duty-free for luxury brands, souvenirs, and travel essentials at unbeatable prices.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/service3.jpg" alt="Dining" />
+                        <h3>Dining</h3>
+                        <p>
+                            Enjoy a variety of restaurants and cafes, from local Ghanaian cuisine to international
+                            favorites.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/service4.jpg" alt="Family Facilities" />
+                        <h3>Family Facilities</h3>
+                        <p>Children's play areas, family restrooms, and baby care rooms for your convenience.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="container-footer">
+            <div class="container-footer-content">
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="flights.html">Flights</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>1 Airport Road, Accra, Ghana</p>
+                    <p>Email: info@airporthub.com</p>
+                    <p>Phone: +233 123 456 789</p>
+                </div>
+                <div>
+                    <h3>Follow Us</h3>
+                    <div class="social-media-icons">
+                        <a href="#" class="social-media-icon"><span>FB</span></a>
+                        <a href="#" class="social-media-icon"><span>TW</span></a>
+                        <a href="#" class="social-media-icon"><span>LN</span></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Student Credentials</h3>
+                    <img src="images/simon.jpg" alt="Simon Mezampeh" width="100" height="100" class="student-photo" />
+                    <div>Simon Mezampeh<br />BC/ITS/24/051</div>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2025 Muchacho Airport Company Limited. All rights reserved.</div>
+        </footer>
+    </body>
+</html>
